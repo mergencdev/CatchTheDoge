@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#eae2b7">
 
     <Button
         android:id="@+id/button"
@@ -23,7 +24,7 @@
         android:layout_marginTop="98dp"
         android:fontFamily="sans-serif-black"
         android:text="CATCH GAME"
-        android:textColor="#FF5722"
+        android:textColor="#F77F00"
         android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -29,7 +29,6 @@ class GameScreen : AppCompatActivity() {
 
         //ImageArray
         dogesArray.add(dogeImage)
-        dogesArray.add(dogeImage1)
         dogesArray.add(dogeImage2)
         dogesArray.add(dogeImage3)
         dogesArray.add(dogeImage4)
@@ -40,6 +39,17 @@ class GameScreen : AppCompatActivity() {
         dogesArray.add(dogeImage9)
         dogesArray.add(dogeImage10)
         dogesArray.add(dogeImage11)
+        dogesArray.add(dogeImage12)
+        dogesArray.add(dogeImage13)
+        dogesArray.add(dogeImage14)
+        dogesArray.add(dogeImage15)
+        dogesArray.add(dogeImage16)
+
+
+
+
+
+
 
         hideImages()
     }
@@ -50,7 +60,7 @@ class GameScreen : AppCompatActivity() {
                 for (i in dogesArray) {
                     i.visibility = View.INVISIBLE
                 }
-                val visibleDoge = (0..11).random()
+                val visibleDoge = (0..15).random()
                 dogesArray[visibleDoge].visibility = View.VISIBLE
 
                 handler.postDelayed(runnable, 400)

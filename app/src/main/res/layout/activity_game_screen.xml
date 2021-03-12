@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameScreen">
+    tools:context=".GameScreen"
+    android:background="#eae2b7">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -16,17 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/timeText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="time:"
-            android:textColor="#d62828"
-            android:textSize="24dp"
-            tools:layout_editor_absoluteX="180dp"
-            tools:layout_editor_absoluteY="55dp" />
 
         <TextView
             android:id="@+id/scoreText"
@@ -34,10 +24,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="score:"
-            android:textColor="#d62828"
-            android:textSize="24dp"
+            android:fontFamily="@font/rascinate_regular"
+            android:text="score"
+            android:textColor="#fcbf49"
+            android:textSize="24sp"
+            android:textAlignment="center"
             tools:layout_editor_absoluteX="174dp"
             tools:layout_editor_absoluteY="118dp" />
     </LinearLayout>
@@ -45,11 +36,12 @@
     <GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="411dp"
-        android:layout_height="392dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText"
         app:layout_constraintVertical_bias="0.806">
 
         <ImageView
@@ -198,5 +190,22 @@
             android:onClick="dogeClicked"
             app:srcCompat="@drawable/doge" />
     </GridLayout>
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="231dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="166dp"
+        android:fontFamily="@font/rascinate_regular"
+        android:text="time:"
+        android:textAlignment="center"
+        android:textColor="#d62828"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
